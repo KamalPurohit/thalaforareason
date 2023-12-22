@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'KulminoituvaRegular';
+    src: url('http://www.miketaylr.com/f/kulminoituva.ttf');
+}
+*{
+    padding: 0px;
+    margin: 0px; 
+    border: 0px;
+}
+#root{
+    position: relative;
+    padding: 0px;
+    background-color: #353535;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+:root{
+    display: flex;
+    padding: 0px;
+}
+
+
+.navbar{
+    font-family: 'poppins' , sans-serif;
+    width: 100vw;
+    background-color: #202124;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 0px;
+}
+
+.navbar > h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.meme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    gap: 20px;
+    color: 20px;
+}
+
+.meme > input{
+    border:2px solid rgb(36, 36, 36);
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: .4s ease-in-out;
+}
+
+.meme > input:focus{
+    border: 2px solid rgb(141, 141, 141) ;
+    padding: 12px 22px;
+}
+
+.meme > h1{
+    color: rgb(255, 244, 165);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.meme .btn{
+    border: 2px solid #313131;
+    padding: 10px 20px;
+    color: rgb(199, 199, 199);
+    border-radius: 25px;
+    background-color: #202124;
+    box-shadow: inset -5px -5px 20px #000000 ,5px 5px 10px #000000b4;
+    
+    font-weight: 500;
+}
+
+.meme .btn:hover{
+    box-shadow: inset 5px 5px 10px #000000df,5px 5px 10px #000000b4;
+    
+}
+
+.thalaChecked{
+    transition: .5s ease-in-out;
+}
+
+.thalaMeme{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.thalaMeme > p{
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    -webkit-text-stroke: 1.5px black;
+    
+}
+
+.thalaMeme .topText{
+    top: 0;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+    transition: .5s ease-in-out;
+}
+
+.thalaMeme .bottomText{
+    bottom: 0;
+}
